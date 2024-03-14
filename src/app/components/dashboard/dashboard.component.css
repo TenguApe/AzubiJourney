@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.name {
+  flex-grow: 1;
+}
+
+.button {
+  margin-left: 10px; /* Platz zwischen Name und Button */
+}

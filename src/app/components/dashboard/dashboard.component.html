@@ -1,1 +1,18 @@
-<p>dashboard works!</p>
+<div>
+  <button color ="white" text="Java">
+    Java
+  </button>
+  <button [className]="btnRight" color ="white" text="New">
+    Neues Lerngebiet
+  </button>
+</div>
+
+
+<div class="divField">
+  <div class="field" *ngFor="let field of fields">
+    <b>Themen</b>
+    <div class="button"> <button (click)="buttonClicked(field)"> text={{field.name}}</button></div>
+  </div>
+</div>
+
+
