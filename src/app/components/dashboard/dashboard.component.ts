@@ -4,6 +4,7 @@ import {Field} from "../../field";
 import {FieldService} from "../../fieldService";
 import {NgForOf, NgIf} from "@angular/common";
 import {ButtonComponent} from "../button/button.component";
+import {SubjectAreaComponent} from "../subject-area/subject-area.component";
 
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +13,8 @@ import {ButtonComponent} from "../button/button.component";
     RouterLink,
     NgForOf,
     NgIf,
-    ButtonComponent
+    ButtonComponent,
+    SubjectAreaComponent
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'

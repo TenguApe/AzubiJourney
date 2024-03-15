@@ -6,9 +6,7 @@
 <div class="divField">
   <b class="überschrift">Themen</b>
   <li *ngFor="let field of fields">
-    <div class="button">
-      <app-button text="{{ field.name }}"> </app-button>
-    </div>
+    <app-subject-area [name]="field.name"></app-subject-area>
   </li>
 </div>
 
