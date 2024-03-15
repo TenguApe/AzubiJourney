@@ -3,6 +3,7 @@ import {RouterLink} from "@angular/router";
 import {Field} from "../../field";
 import {FieldService} from "../../fieldService";
 import {NgForOf, NgIf} from "@angular/common";
+import {ButtonComponent} from "../button/button.component";
 
 @Component({
   selector: 'app-dashboard',
@@ -10,12 +11,13 @@ import {NgForOf, NgIf} from "@angular/common";
   imports: [
     RouterLink,
     NgForOf,
-    NgIf
+    NgIf,
+    ButtonComponent
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
-export class DashboardComponent implements OnInit{
+export class DashboardComponent implements OnInit {
   fields: Field[] = [];
 
   constructor(private fieldService: FieldService) {
@@ -23,16 +25,24 @@ export class DashboardComponent implements OnInit{
 
   ngOnInit() {
     this.getFields();
-    console.log(this.fields)
   }
 
   private getFields() {
     this.fieldService.getFields()
-      .subscribe(fields => this.fields = fields);
+      .subscribe(fields => {
+        this.fields = fields;
+        console.log(this.fields);
+      });
   }
 
-  buttonClicked(field) {
+  createNewField() {
+    let fieldAmount: number = this.fields.length;
+    const newField: Field = {
+      id: fieldAmount++,
+      name: "Neues Lerngebiet"
+    };
 
+    this.fieldService.createField(newField);
   }
 }
 
