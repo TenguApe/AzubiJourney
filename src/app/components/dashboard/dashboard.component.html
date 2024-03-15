@@ -1,18 +1,20 @@
 <div>
-  <button color ="white" text="Java">
+  <button color="white" text="Java">
     Java
   </button>
-  <button [className]="btnRight" color ="white" text="New">
+  <button color="white" text="New">
     Neues Lerngebiet
   </button>
 </div>
 
 
 <div class="divField">
-  <div class="field" *ngFor="let field of fields">
+  <li *ngFor="let field of fields">
     <b>Themen</b>
-    <div class="button"> <button (click)="buttonClicked(field)"> text={{field.name}}</button></div>
-  </div>
+    <div class="button">
+      <button> {{ field.name }}</button>
+    </div>
+  </li>
 </div>
 
 
