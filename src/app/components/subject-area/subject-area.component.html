@@ -1,3 +1,7 @@
 <div class="button">
-  <app-button text="{{ name }}"> </app-button>
+  <app-button text="{{ name }}"></app-button>
 </div>
+
+<p class="rating">{{ rating }}/5</p>
+
+<p *ngIf="errorMsg == ''" class="errorMessage">{{ errorMsg }}</p>
