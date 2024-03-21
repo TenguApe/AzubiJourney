@@ -20,7 +20,7 @@ export class FieldService {
   createField(newField: Field) {
     newField.id = INITFIELDS.length + 1;
     const currentFields = this.getFields();
-    this.getFields().subscribe(currentFields =>{
+    this.getFields().subscribe(currentFields => {
       const updatedFields = [...currentFields, newField];
       this.fieldsSubject.next(updatedFields);
     });

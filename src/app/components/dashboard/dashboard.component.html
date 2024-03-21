@@ -3,10 +3,10 @@
 </div>
 
 
-<div class="divField">
+<div class="divSubject">
   <b class="überschrift">Themen</b>
-  <li *ngFor="let field of fields">
-    <app-subject-area [name]="field.name" [rating]=3 ></app-subject-area>
+  <li class="list" *ngFor="let field of fields">
+    <app-subject-area [name]="field.name" [rating]="field.rating" ></app-subject-area>
   </li>
 </div>
 

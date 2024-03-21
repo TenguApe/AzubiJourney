@@ -41,7 +41,8 @@ export class DashboardComponent implements OnInit {
     let fieldAmount: number = this.fields.length;
     const newField: Field = {
       id: fieldAmount++,
-      name: "Neues Lerngebiet"
+      name: "Neues Lerngebiet",
+      rating: 0
     };
 
     this.fieldService.createField(newField);

@@ -17,11 +17,9 @@ export class SubjectAreaComponent {
   @Input() name: string;
   @Input() rating: number = 0;
   errorMsg: string;
-
   constructor() {
-    this.checkRating();
   }
-  private checkRating() {
+   checkRating() {
     if (this.rating > 5) {
       this.errorMsg = 'Fehler! Rating darf nicht größer als 5 sein.';
     }
