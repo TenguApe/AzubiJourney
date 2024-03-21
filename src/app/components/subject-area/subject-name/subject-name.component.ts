@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './subject-name.component.css'
 })
 export class SubjectNameComponent {
+  name: string;
 
 }
