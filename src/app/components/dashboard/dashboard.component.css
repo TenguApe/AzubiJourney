@@ -10,10 +10,15 @@
   border-bottom: 1px solid #ccc;
 }
 
+.überschrift{
+
+}
+
 .name {
   flex-grow: 1;
 }
 
 .button {
-  margin-left: 10px; /* Platz zwischen Name und Button */
+  margin-left: 10px;
+  margin-bottom: 15px;
 }

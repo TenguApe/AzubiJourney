@@ -1,20 +1,12 @@
-<div>
-  <button color="white" text="Java">
-    Java
-  </button>
-  <button color="white" text="New">
-    Neues Lerngebiet
-  </button>
+<div class="button">
+  <app-button color="white" text="Neues Lerngebiet" (btnClick)="createNewField()"></app-button>
 </div>
 
 
-<div class="divField">
-  <li *ngFor="let field of fields">
-    <b>Themen</b>
-    <div class="button">
-      <button> {{ field.name }}</button>
-    </div>
+<div class="divSubject">
+  <b class="überschrift">Themen</b>
+  <li class="list" *ngFor="let field of fields">
+    <app-subject-area [name]="field.name" [rating]="field.rating" ></app-subject-area>
   </li>
 </div>
-
 
