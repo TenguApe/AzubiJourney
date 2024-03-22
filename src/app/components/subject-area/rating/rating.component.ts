@@ -30,7 +30,7 @@ export class RatingComponent {
 
   loopThrough() {
     //let loopRating: number = this.rating++;
-    let loopRating = 3.5;
+    let loopRating = 3.5; //Fester Rating Wert nur für Testzwecke, eigentlich wärs Zeile 32
     for (let i = 0; i < 5; i++) {
       if (loopRating >= 1) {
         this.stars[i].star = 'full';
