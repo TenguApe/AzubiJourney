@@ -18,9 +18,7 @@ export class StarComponent{
 
   iconHalf = faStarHalf;
   icon = faStar;
-
   @Input() rating!: string;
-
 
   displayFull: boolean;
   displayHalf: boolean;

@@ -22,6 +22,10 @@ describe('StarComponent', () => {
   });
 
   it('should display empty star rating when ', () => {
+    fixture.componentInstance.rating = 'empty';
+    component.selectStar();
+    fixture.detectChanges();
+
 
   });
 

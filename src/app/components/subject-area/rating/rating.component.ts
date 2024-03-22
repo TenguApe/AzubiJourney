@@ -23,29 +23,23 @@ export class RatingComponent {
     {star: 'empty'},
   ]
 
-  ngOnInit(){
+  ngOnInit() {
     this.loopThrough();
-    console.log(this.stars);
   }
 
 
-  loopThrough(){
+  loopThrough() {
     //let loopRating: number = this.rating++;
     let loopRating = 3.5;
-    for(let i = 0; i < 5; i++){
-      if(loopRating >= 1){
+    for (let i = 0; i < 5; i++) {
+      if (loopRating >= 1) {
         this.stars[i].star = 'full';
-      }
-      else if(loopRating === 0.5){
+      } else if (loopRating === 0.5) {
         this.stars[i].star = 'half';
-      }
-      else {
+      } else {
         this.stars[i].star = 'empty';
       }
       loopRating--;
     }
-
   }
-
-
 }
