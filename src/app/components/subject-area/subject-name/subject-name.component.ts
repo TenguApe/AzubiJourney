@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-subject-name',
@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './subject-name.component.css'
 })
 export class SubjectNameComponent {
-  name: string;
+  @Input() name: string;
 
+  onClick() {
+    //navigates deeper into the chosen subject details
+  }
 }

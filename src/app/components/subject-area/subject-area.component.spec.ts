@@ -27,7 +27,7 @@ class TestHostComponent2 {
 describe('SubjectAreaComponent', () => {
   //stores an instance of SubjectAreaComponent
   let component: SubjectAreaComponent;
-  //stores an instace of ComponentFixture,
+  //stores an instance of ComponentFixture,
   //which contains methods for debugging and testing a component
   let fixture: ComponentFixture<SubjectAreaComponent>;
 

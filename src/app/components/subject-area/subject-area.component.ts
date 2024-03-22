@@ -1,13 +1,15 @@
 import {Component, Input} from '@angular/core';
 import {ButtonComponent} from "../button/button.component";
 import {NgIf} from "@angular/common";
+import {SubjectNameComponent} from "./subject-name/subject-name.component";
 
 @Component({
   selector: 'app-subject-area',
   standalone: true,
   imports: [
     ButtonComponent,
-    NgIf
+    NgIf,
+    SubjectNameComponent
   ],
   templateUrl: './subject-area.component.html',
   styleUrl: './subject-area.component.css'
