@@ -11,7 +11,7 @@ describe('StarComponent', () => {
       imports: [StarComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(StarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -19,5 +19,17 @@ describe('StarComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should display empty star rating when ', () => {
+
+  });
+
+  it('should display half filled star rating when ', () => {
+
+  });
+
+  it('should display filled star rating when ', () => {
+
   });
 });
