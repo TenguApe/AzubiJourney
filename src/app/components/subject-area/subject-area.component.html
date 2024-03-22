@@ -2,6 +2,8 @@
   <app-subject-name name="{{ name }}"></app-subject-name>
 </div>
 
-<p class="rating">Aktuelles Rating: {{ rating }}/5</p>
+<p class="rating">Aktuelles Rating: {{ rating }}/5<app-rating></app-rating></p>
 
 <p *ngIf="errorMsg" class="errorMessage">{{ errorMsg }}</p>
+
+

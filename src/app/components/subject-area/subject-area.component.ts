@@ -2,6 +2,8 @@ import {Component, Input} from '@angular/core';
 import {ButtonComponent} from "../button/button.component";
 import {NgIf} from "@angular/common";
 import {SubjectNameComponent} from "./subject-name/subject-name.component";
+import {StarComponent} from "./rating/star/star.component";
+import {RatingComponent} from "./rating/rating.component";
 
 @Component({
   selector: 'app-subject-area',
@@ -9,7 +11,9 @@ import {SubjectNameComponent} from "./subject-name/subject-name.component";
   imports: [
     ButtonComponent,
     NgIf,
-    SubjectNameComponent
+    SubjectNameComponent,
+    StarComponent,
+    RatingComponent
   ],
   templateUrl: './subject-area.component.html',
   styleUrl: './subject-area.component.css'
